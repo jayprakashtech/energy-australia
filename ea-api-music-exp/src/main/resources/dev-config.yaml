@@ -1,0 +1,4 @@
+energyaustralia:
+  host: "eacp.energyaustralia.com.au"
+  port: "443"
+  path: "/codingtest/api/v1/festivals"

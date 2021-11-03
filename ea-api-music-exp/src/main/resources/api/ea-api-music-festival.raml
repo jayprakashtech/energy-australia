@@ -1,0 +1,22 @@
+#%RAML 1.0
+title: ea-api-music-festival
+version: V1
+
+uses:
+  common-lib: exchange_modules/d71c6fc1-8101-40fe-89b7-2338ff3ac363/common-lib/1.0.0/common-lib.raml
+
+/api:
+  /v1:
+    /recordlabel:
+      get:
+        description: Gives music festival details for energy australia.
+        responses:
+          200:
+            body:
+              application/json:
+                type: common-lib.music-festival-response-data-type[]
+          429:
+            body:
+              application/text:
+                example:
+                  "string value"
